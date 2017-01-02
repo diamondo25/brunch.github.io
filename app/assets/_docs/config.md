@@ -253,7 +253,7 @@ Example:
 ```javascript
 // Same as 'commonjs'.
 modules: {
-  wrapper: (path, data) => {
+  definition: (path, data) => {
     return `
 require.define({${path}: function(exports, require, module) {
   ${data}
